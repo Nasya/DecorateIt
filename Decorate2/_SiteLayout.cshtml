@@ -1,0 +1,83 @@
+﻿@using Microsoft.AspNet.Identity
+@using Microsoft.AspNet.Identity.EntityFramework
+@using Microsoft.Owin.Security
+
+
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/Content/css/style.css">
+    <title>Decorate it!</title>
+    <link href="/Content/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+</head>
+<body>
+
+    <div id="page-wrapper">
+        <header id="header"><div class="top_line">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-xs-6"></div>
+            <div class="col-md-4 col-xs-6">
+                <section id="login">
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <text>
+                            Hello, <a class="email" href="~/Account/Manage" title="Manage">@User.Identity.GetUserName()</a>!
+                            <form id="logoutForm" action="~/Account/Logout" method="post">
+                                @AntiForgery.GetHtml()
+                                <a href="javascript:document.getElementById('logoutForm').submit()">Log out</a>
+                            </form>
+                        </text>
+                    }
+                    else
+                    {
+                        <ul>
+                            <li><a href="~/Account/Register">Register</a></li>
+                            <li><a href="~/Account/Login">Log in</a></li>
+                        </ul>
+                    }
+                </section>
+            </div>
+            <div class="col-md-4 col-xs-6">
+
+                    <ul>
+                        <li><a href="/Content/pages/menu.html">Меню</a></li>
+                        <li><a href="/Content/pages/contacts.html">Контакти</a></li>
+                        <li><a href="/Content/pages/busket.html" id="Busket"><img src="/Content/pics/shopping-cart.png" height="19" width="19"></a></li>
+                        <li><a href="~/Account/Login.cshtml" id="Door"><img src="/Content/pics/door-9-xxl.png" height="19" width="19"></a></li>
+                    </ul>
+                </div>
+            </div>
+        
+    </div>
+</div>
+        </header>
+
+       
+        <div id="body">
+            @RenderSection("featured", required: false)
+            <section class="content-wrapper main-content clear-fix">
+                @RenderBody()
+            </section>
+        </div>
+        <footer>
+            <div class="content-wrapper">
+                <div class="float-left">
+                    <p>&copy; @DateTime.Now.Year - My ASP.NET Web Page</p>
+                </div>
+            </div>
+        </footer>
+        @RenderSection("Scripts", required: false)
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/Content/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

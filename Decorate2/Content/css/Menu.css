@@ -1,0 +1,104 @@
+body {
+
+    font-family: "SegoePrintRegular";
+    font-size: 14px;
+    line-height: 1.4;
+
+}
+
+.main-menu {
+    width: 180px;
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+    list-style: none;
+    font-family: "SegoePrintRegular";
+}
+
+.main-menu a {
+    display: block;
+    margin-bottom: -1px;
+    padding: 8px 14px;
+    text-decoration: none;
+    color: #0088cc;
+    border: 1px solid #e5e5e5;
+}
+
+.main-menu a:hover {
+    background: #f5f5f5;
+}
+
+.main-menu > li {
+}
+
+/* Подменю */
+
+.main-menu .sub-menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: #fcf8e3;
+}
+header{
+  height: 75px;
+  background: url("../pics/floral-header.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
+}
+footer{
+  height: 75px;
+  background: url("../pics/floral-header.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
+}
+@font-face {
+    font-family: "SegoePrintRegular";
+    src: url("../fonts/SegoePrintRegular/SegoePrintRegular.eot");
+    src: url("../fonts/SegoePrintRegular/SegoePrintRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/SegoePrintRegular/SegoePrintRegular.woff") format("woff"),
+    url("../fonts/SegoePrintRegular/SegoePrintRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+.main{
+  height: 500px;
+}
+.catalog{
+  height: 450px;
+  width: 100%;
+  position: absolute;
+  left: 180px;
+}
+.menu{
+  width: 180px;
+    position: absolute;
+
+}
+.block1, .block2, .block3, .block4{
+  float:left;
+  margin:3px 3px 3px 5px;
+  background: #F0FCE8;
+  width:280px;
+  height:240px;
+  padding: 5px;
+  text-align: center;
+   border-radius: 4px;
+  box-shadow: rgba(0,0,0,1.2) 0px 1px 3px;
+}
+.block5, .block6, .block7, .block8{
+  float:left;
+  margin:3px 3px 3px 5px;
+  
+  width:280px;
+  height:240px;
+  padding: 5px;
+  text-align: center;
+  border-radius: 4px;
+  box-shadow: rgba(0,0,0,1.2) 0px 1px 3px;
+}
+.first_l{
+
+}
+.second_l{}

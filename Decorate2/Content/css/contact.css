@@ -1,0 +1,39 @@
+header{
+	background: url("../pics/floral-header.png");
+	height: 75px;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	position: relative;
+}
+footer{
+	background: url("../pics/floral-header.png");
+	height: 75px;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	position: relative;
+}
+.info{
+	height: 76%;
+}
+p{
+	font-family: "SegoePrintRegular";
+	padding-left: 100px;
+	padding-top: 30px;
+	font-size: 18px;
+	
+}
+@font-face {
+    font-family: "SegoePrintRegular";
+    src: url("../fonts/SegoePrintRegular/SegoePrintRegular.eot");
+    src: url("../fonts/SegoePrintRegular/SegoePrintRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/SegoePrintRegular/SegoePrintRegular.woff") format("woff"),
+    url("../fonts/SegoePrintRegular/SegoePrintRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+#H{
+	font-size: 28px;
+	padding-left: 38%;
+	font-family: "SegoePrintRegular";
+
+}

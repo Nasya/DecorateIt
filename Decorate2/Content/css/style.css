@@ -1,0 +1,130 @@
+
+/*primary-menu*/
+#primary-menu > ul{
+	margin-top: -560px;
+	padding: 0;
+	margin-left: 50px;
+}
+
+#primary-menu > ul > li{
+	display: inline-block;
+	list-style: none;
+	margin-right: 7px;
+	font-weight: bold;
+}
+
+#primary-menu > ul > li:last-child{
+	margin-right: 0;
+}
+
+#primary-menu > ul > li a{
+	color: #000;
+	text-decoration: none;
+}
+
+#header{
+
+	opacity: 0.8;
+
+	height: 100px;
+	
+	margin-bottom: 0;
+	padding: 0;
+}
+/*#Busket{
+	background: url(../pics/shopping-cart.png);
+	width: 20px;
+	height: 20px;
+}*/
+#primary-menu > ul > li a {
+	color: purple;
+	font-family: "SegoePrintRegular";
+	font-size: 20px;
+	
+}
+/* font-family: "SegoePrintRegular"; */
+@font-face {
+    font-family: "SegoePrintRegular";
+    src: url("../fonts/SegoePrintRegular/SegoePrintRegular.eot");
+    src: url("../fonts/SegoePrintRegular/SegoePrintRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/SegoePrintRegular/SegoePrintRegular.woff") format("woff"),
+    url("../fonts/SegoePrintRegular/SegoePrintRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+.mid_line  p{
+	color: white;
+	font-family: "SegoePrintRegular";
+	margin-top: -420px;
+	text-align: center;
+	font-size: 85px;
+	margin-bottom: 0;
+}
+.inp  input{
+	width: 550px;
+}
+.inp{
+	font-size: 20px;
+	margin-top: -250px;
+	border-color: white;
+	font-family: "SegoePrintRegular";
+	color: purple;
+	margin-left: 25%;
+	width: 600px;
+	margin-bottom: 0;
+}
+.line{
+	background-color: purple;
+	height: 50px;
+	margin-top: -10px;
+}
+.second{
+	height: 640px;
+	font-family: Book Antiqua,Palatino,Palatino Linotype,Palatino LT STD,Georgia,serif; 
+	text-align: center;
+	font-size: 16px;
+	margin-top: 20px;
+}
+.second p span{
+	font-size: 22px;
+	}
+.but{
+	font-family: "SegoePrintRegular";
+	text-align: center;
+	font-size: 18px;
+	background: purple;
+	color: white;
+	width: 230px;
+	padding: 7px;
+	border-radius: 30px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.line2{
+	background-color: purple;
+	height: 50px;
+	margin-top: 60px;
+	width: 100%;
+}
+.third{
+	height: 640px;
+	font-family: Book Antiqua,Palatino,Palatino Linotype,Palatino LT STD,Georgia,serif; 
+	text-align: center;
+	font-size: 16px;
+	margin-top: 20px;
+}
+.third p span{
+	font-size: 22px;
+	}
+
+td,th{
+    border: none;
+}
+#body{
+    background: url("../pics/back1.png");
+	background-position: top center;
+	background-size: 100%;
+	position: relative;
+	background-repeat: no-repeat;
+    
+}
